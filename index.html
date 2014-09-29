@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CUA</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/jquery-ui.min.css">
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<link rel="stylesheet" href="css/app.css">
+	<link rel="stylesheet" href="css/landing-page.css">
+	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+	<script type="text/javascript" src="js/fabric.min.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript" src="js/landing.js"></script>
+	<script type="text/javascript">
+		(function(d, s, id){
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) {return;}
+			js = d.createElement(s); js.id = id;
+			js.src = "//connect.facebook.net/en_US/sdk.js";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+
+		window.fbAsyncInit = function() {
+		    FB.init({
+		      appId      : '1513386428897011',
+		      xfbml      : true,
+		      version    : 'v2.1'
+		    });
+
+		    // Facebook login
+			// FB.login(function(response) {
+			//     if (response.authResponse) {
+			//         // login success, then post a photo
+			//         FB.api('/me/photos', 'post', {
+		 //                   message: 'Your Message',
+		 //                   url: 'http://localhost/cua/images/facebook.png'
+		 //               },
+		 //               function(response) {
+		 //                 console.log(response);
+		 //                 if (!response || response.error) {
+		 //                     console.log('failed');
+		 //                 } else {
+		 //                     console.log('success');
+		 //                 }
+		 //               }
+			//         );
+			//     }
+			// }, {scope: 'publish_stream'});
+		};
+	</script>
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+	<div class="navbar navbar-fixed-top" role="navigation">
+		<div id="navbar" class="container">
+			<div class="navbar-header">
+				<button class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Toggle Navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="" class="navbar-brand"><img src="images/logo.png" class="img-responsive" alt=""></a>
+			</div>
+			<div class="collapse navbar-collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="#advantage">The CUA Advantage</a></li>
+					<li><a href="#about">About CUA</a></li>
+					<li><a href="#washington">Washington, DC</a></li>
+					<li><a href="#academic">Academic Programs</a></li>
+					<li><a href="#service">Commitment to Service</a></li>
+					<li class="last-child"><a href="">Scholarships and Financial Aid</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- main content -->
+	<div class="main-content">
+		<!-- landing -->
+		<section id="landing">
+			<div class="container">
+				<h1 class="section-title">Modern Thinking. Grounded in Tradition.</h1>
+				<div class="row">
+					<div class="col-md-6">
+						<h2 class="landing-subtitle">
+							Old-School. Innovative. Traditional.<br />
+							Cutting-Edge.<br />
+							Quirky. Clever. Cool.<br />
+							Urban. Tranquil. Artsy. Refined.<br />
+							Global. Adventurous. Inspired.<br />
+						</h2>
+						<h2 class="landing-grand-subtitle red-text">This is CUA.</h2>
+						<p>Modern-Thinking. Grounded in Tradition. Because at The Catholic University of America, we maintain time-honored traditions while encouraging independent and creative intellectual pursuits. Our students are global-ready, service-minded, and purpose-driven. They are scientists and songwriters, social workers and aspiring senators – and YOU.</p>
+						<h2 class="landing-grand-subtitle red-text">EXPERIENCE CUA for yourself!</h2>
+						<p>Take a little stress out of your junior year with a road trip to DC! Visiting CUA is a great way to see what it's like to live and study in one of the nation's largest college towns. Call 800-673-2772 or <a href="#" class="red-text">register online</a> to schedule your visit, or register for one of our <a href="#" class="red-text">Open Houses</a> or <a href="#" class="red-text">Focus Days.</a></p>
+					</div>
+					<div class="col-md-6">
+						<div id="canvas-placeholder">
+							<h2 class="landing-grand-subtitle mt-0">Picture Yourself Here. (Literally!)</h2>
+							<p>Simply take a selfie, then place it on your choice of CUA's most popular landmarks and campus hot spots. Post your shot on Facebook, Twitter, and Instagram so your friends can see you at CUA too!</p>
+							<p><img src="images/canvas-placeholder.jpg" alt="" class="img-responsive"></p>
+						</div>
+					</div>
+				</div>
+				<div class="line"></div>
+			</div>
+		</section>
+		<!-- advantage -->
+		<section id="advantage">
+			<div class="container">
+				<h1 class="section-title">The CUA Advantage</h1>
+				<div class="row">
+					<div class="col-md-6">
+						<h4 class="quote fwb">&quot;Life is a journey. When we stop, things don't go right.&quot;</h4>
+						–Pope Francis<br /><br />
+						<p>At <b>The Catholic University of America</b>, we're always on the move. Toward inquiry and discovery. Intellectual diversity. Global outreach.</p>
+						<p>With roots dating back to 1887, we have evolved into an innovative and forward-thinking campus defined by academic energy, exploration and commitment to service. Our students reach for the stars, but are grounded by faith.</p>
+						<p>At CUA, we never stop in our pursuit of the BEST that higher education can offer.</p>
+						<p><b>What You'll Gain at CUA:</b></p>
+						<ul>
+							<li>A stunning 180-acre tree-lined campus just minutes away from the unparalleled opportunities provided by our nation's capital</li>
+							<li>Small classes taught by renowned faculty</li>
+							<li>Unrivaled commitment to public service</li>
+							<li>Unmatched access to internships</li>
+							<li>In-class learning combined with hands-on experiences</li>
+							<li>Unique opportunities to conduct scholarly and scientific research</li>
+							<li>Expansive study-abroad opportunities offering programs everywhere from Rome, Italy to Sydney, Australia</li>
+							<li>An atmosphere where freedom is fostered, truth imparted, integrity upheld</li>
+						</ul>
+						<p><b>Where you take your journey makes all the difference.</b> Why settle for &quot;<b>almost</b>&quot; what you want?</p>
+					</div>
+					<div class="col-md-6">
+						<h2 class="landing-subtitle mt-0">See Yourself Here:</h2>
+						<div class="row">
+							<div class="col-md-5 col-xs-5">
+								<img src="images/girl-left.png" alt="" class="img-responsive">
+								<span class="quote">&quot;CUA felt like home from the time the Orientation team unloaded my car!&quot; - Laura Dunn, &apos;17</span>
+							</div>
+							<div class="col-md-1 col-xs-1"></div>
+							<div class="col-md-5 col-xs-5">
+								<img src="images/girl-right.png" alt="" class="img-responsive">
+								<p>&quot;Catholic has the whole package!&quot; - Tarah Portland, &apos;16</p>
+							</div>
+							<div class="col-md-1"></div>
+						</div>
+						<h2 class="landing-grand-subtitle red-text">CUA Snapshot:</h2>
+						<h2 class="section-title mt-0">3,600 <small>Undergraduate Students</small><br />
+							10:1 <small>Student-to-Faculty Ratio</small><br />
+							2,500 <small>Graduate Students</small><br />
+							45 <small>Percent Male</small><br />
+							55 <small>Percent Female</small>
+						</h2>
+					</div>
+				</div>
+				<div class="back-to-top">top</div>
+				<div class="line"></div>
+			</div>
+		</section>
+		<!-- about -->
+		<section id="about">
+			<div class="container">
+				<h1 class="section-title">About CUA</h1>
+				<div class="row">
+					<div class="col-md-6">
+						<h2 class="landing-grand-subtitle red-text mt-0">The TRUTH About CUA.</h2>
+						<p>The accolades keep coming in. The <b>Princeton Review</b> has ranked CUA as one of the Northeast's <b>BEST</b> colleges for excellent academic programs. <b>Fiske</b> has named us a <b>BEST BUY</b>. Not bad, but the truth is, we're even <b>MORE</b>.</p>
+						<p><b>Consider this:</b></p>
+						<ul>
+							<li>At CUA, you'll be taught by the BEST. Ninety-seven percent of our faculty hold the highest degrees in their field.</li>
+							<li>At CUA, you'll NEVER be a number. While you'll enjoy the resources of a major research university, we keep class sizes small and personal. So there's nowhere to hide, but plenty of room to shine.</li>
+							<li>At CUA, we carry the notable distinction of being THE national university of the Catholic Church. That said, we're not pushy. While guided by Christian thought and ideals, we welcome students of all faiths and respect individual worship.</li>
+						</ul>
+					</div>
+					<div class="col-md-6">
+						<div class="row">
+							<div class="col-md-5 col-xs-5">
+								<img src="images/girl-left.png" alt="" class="img-responsive">
+								<span class="quote">&quot;CUA is forever my second home.&quot; - Felicity Quynh Dang, &apos;14</span>
+							</div>
+							<div class="col-md-1 col-xs-1"></div>
+							<div class="col-md-5 col-xs-5"></div>
+							<div class="col-md-1"></div>
+						</div>
+						<h2 class="landing-grand-subtitle red-text">CUA Snapshot:</h2>
+						<h2 class="section-title mt-0">
+							90 <small>Student Clubs and Organizations</small><br />
+							17 <small>Residence Halls</small><br />
+							91 <small>Percent of Graduates Employed Within 6 Months</small><br />
+							33 <small>Percent go on to Graduate School</small>
+						</h2>
+					</div>
+				</div>
+				<div class="back-to-top"></div>
+				<div class="line"></div>
+			</div>
+		</section>
+		<!-- washington -->
+		<section id="washington">
+			<div class="container">
+				<h2 class="section-title">Washington D.C.</h2>
+				<div class="row">
+					<div class="col-md-6">
+						<h2 class="landing-grand-subtitle red-text mt-0">Bright Lights, Big City – and a Healthy Dose of Green</h2>
+						<p>From majestic monuments and awe-inspiring art museums to chic shops and free festivals, Washington, DC, has it all. And CUA's <b>	on-campus Metrorail stop</b> will whisk you in mere minutes to all the hot spots you'll want to hit.</p>
+						<p>What's more, our nation's capital is a hotbed for corporate, congressional, government, high-tech, and medical <b>internships</b>, so you'll be a step ahead when it's time to land your dream job. And did we mention you'll be in the middle of <b>one of the nation's largest college towns</b>, with more than 400,000 other students studying at area colleges and universities?</p>
+						<p>Need a break from the bright lights, big city? CUA's got you covered. Our lush 180-acre tree-lined campus – the ONLY one of its kind in DC – is an oasis amidst the concrete, offering:</p>
+						<ul>
+							<li>Grassy expanses for socializing, studying,and serenity</li>
+							<li>90 student clubs and organizations</li>
+							<li>21 NCAA Division III intercollegiate sports teams, PLUS 10 club sports</li>
+							<li>50 service opportunities EACH WEEK</li>
+						</ul>
+					</div>
+					<div class="col-md-6">
+						<h2 class="landing-subtitle mt-0">See Yourself Here:</h2>
+						<div class="row">
+							<div class="col-md-5 col-xs-5">
+								<img src="images/girl-left.png" alt="" class="img-responsive">
+								<span class="quote">&quot;DC is a city for young people. There are plenty of festivals and free attractions all the time – perfect for a college budget.&quot; - Julia Girardi, &apos;15</span>
+							</div>
+							<div class="col-md-1 col-xs-1"></div>
+							<div class="col-md-5 col-xs-5">
+								<img src="images/girl-right.png" alt="" class="img-responsive">
+								<p>&quot;The nation's capital is THE place to be. Your one-stop shop for cultural education, fun, numerous opportunities, and connections.&quot; - Terrence Britt, &apos;16</p>
+							</div>
+							<div class="col-md-1"></div>
+						</div>
+						<h2 class="landing-grand-subtitle red-text">CUA Snapshot:</h2>
+						<h2 class="section-title mt-0">
+							3 <small>Miles from Campus to US Capitol</small><br />
+							0 <small>Cost to Explore 19 Smithsonian Museums, Attend Outdoor Festivals and Concerts, and Window-shop in Georgetown</small><br />
+							2,000 <small>DC Internship Opportunities Available to CUA Students Each Year</small>
+						</h2>
+					</div>
+				</div>
+				<div class="back-to-top"></div>
+				<div class="line"></div>
+			</div>
+		</section>
+		<!-- academic -->
+		<section id="academic">
+			<div class="container">
+				<h2 class="section-title">Academic Programs</h2>
+				<div class="row">
+					<div class="col-md-6">
+						<h2 class="landing-grand-subtitle red-text mt-0">Find Your Passion Here!</h2>
+						<p>At CUA, we make it easy. With more than 70 academic programs and nine undergraduate schools, CUA will lead you down your own unique path – and prepare you to take on any job or graduate school.</p>
+						<h2 class="landing-grand-subtitle red-text mt-0">Undergraduate Offerings</h2>
+						<div class="row">
+							<div class="col-md-6 col-xs-6">
+								<p><b>School of Architecture and Planning</b></p>
+								<ul>
+									<li>Four-Year Bachelor of Science in Architecture</li>
+									<li>Dual Degree Program with Civil Engineering</li>
+								</ul>
+								<br />
+								<p><b>School of Business and Economics</b></p>
+								<ul>
+									<li>Accounting</li>
+									<li>Economics</li>
+									<li>Finance</li>
+									<li>International Business</li>
+									<li>International Economics and Finance – Honors</li>
+									<li>Management</li>
+									<li>Marketing</li>
+								</ul>
+								<br />
+								<p><b>School of Engineering</b></p>
+								<ul>
+									<li>Biomedical</li>
+									<li>Civil</li>
+									<li>Construction</li>
+									<li>Dual Degree with Architecture</li>
+									<li>Computer Science</li>
+									<li>Electrical</li>
+									<li>Alternative and Renewable Energy</li>
+									<li>Mechanical</li>
+									<li>Environmental</li>
+								</ul>
+								<br />
+								<p><b>Benjamin T. Rome School of Music</b></p>
+								<ul>
+									<li>Bachelor of Art, Music</li>
+									<li>General</li>
+									<li>Performance</li>
+									<li>Music History and Literature</li>
+									<li>Bachelor of Music</li>
+									<li>Collaborative Piano</li>
+									<li>Composition</li>
+									<li>Music Education</li>
+									<li>General – Choral Music Education</li>
+									<li>Instrumental Music Education</li>
+									<li>Combined General – Choral and Instrumental Music Education</li>
+									<li>Instrumental Music Education/Orchestral</li>
+									<li>Instruments (Dual Degree)</li>
+									<li>Musical Theater</li>
+									<li>Performance</li>
+									<li>Orchestral Instruments</li>
+									<li>Organ</li>
+									<li>Piano</li>
+									<li>Voice</li>
+									<li>Piano Pedagogy</li>
+								</ul>
+								<br />
+								<p><b>The School of Theology and Religious Studies</b></p>
+								<ul>
+									<li>Bachelor of Arts in Theology and Religious Studies</li>
+									<li>Certificate in Pastoral Ministry</li>
+								</ul>
+								<br />
+								<p><b>Metropolitan School of Professional Studies</b></p>
+								<ul>
+									<li>Bachelor of Arts in Information Technology (B.A.I.T)</li>
+									<li>Bachelor of Arts in Interdisciplinary Studies (B.A.I.S.)</li>
+									<li>Bachelor of Arts in Management (B.A.Mgt.)</li>
+								</ul>
+							</div>
+							<div class="col-md-6 col-xs-6">
+								<p><b>School of Arts and Sciences</b></p>
+								<ul>
+									<li>Anthropology</li>
+									<li>Art History</li>
+									<li>Art: Studio</li>
+									<li>Biochemistry</li>
+									<li>Biology</li>
+									<li>Chemical Physics</li>
+									<li>Chemistry</li>
+									<li>Classical Civilization</li>
+									<li>Classical Humanities</li>
+									<li>Classics: Greek and Latin</li>
+									<li>Drama</li>
+									<li>Education</li>
+									<li>Early Childhood Education</li>
+									<li>Elementary Education</li>
+									<li>Secondary Education</li>
+									<li>Education Studies (non-teaching)</li>
+									<li>English Language and Literature*</li>
+									<li>Environmental Chemistry</li>
+									<li>French</li>
+									<li>German</li>
+									<li>History*</li>
+									<li>Italian Studies</li>
+									<li>Mathematics*</li>
+									<li>Media Studies</li>
+									<li>Medieval and Byzantine Studies</li>
+									<li>Philosophy</li>
+									<li>Philosophy Concentration</li>
+									<li>Pre-Law Concentration</li>
+									<li>Physics</li>
+									<li>Politics</li>
+									<li>Psychology</li>
+									<li>Sociology</li>
+									<li>Spanish</li>
+									<li>Spanish for International Service</li>
+									<li>Theology and Religious Studies</li>
+									<li>Undecided/Exploratory</li>
+								</ul>
+								<p class="red-text quote">*Indicates areas of study that are also offered with Secondary Education Minor</p>
+								<br />
+								<p><b>School of Nursing</b></p>
+								<ul>
+									<li>Four-Year Bachelor of Science</li>
+								</ul>
+								<br />
+								<p><b>School of Philosophy</b></p>
+								<ul>
+									<li>Philosophy Program of Concentration</li>
+								</ul>
+								<br />
+								<p><b>The School of Theology and Religious Studies</b></p>
+								<ul>
+									<li>Bachelor of Arts in Theology and Religious Studies</li>
+									<li>Certificate in Pastoral Ministry</li>
+								</ul>
+								<br /> 
+								<p><b>National Catholic School of Social Service</b></p>
+								<ul>
+									<li>Social Work</li>
+								</ul>
+								<br />
+								<p><b>Preprofessional Studies</b></p>
+								<ul>
+									<li>Dental</li>
+									<li>Law</li>
+									<li>Medicine</li>
+									<li>Veterinary</li>
+								</ul>
+								<p class="quote red-text">Note: Students interested in Preprofessional Studies must also select an official major, such as biology, biomedical engineering or politics.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<h2 class="landing-subtitle mt-0">See Yourself Here:</h2>
+						<div class="row">
+							<div class="col-md-5 col-xs-5">
+								<img src="images/girl-left.png" alt="" class="img-responsive">
+								<span class="quote">&quot;Not only does CUA help you decide what you want to be when you grow up, it gives you the life skills you need to get there.&quot; - Emily McDonanld, &apos;14</span>
+							</div>
+							<div class="col-md-1 col-xs-1"></div>
+							<div class="col-md-5 col-xs-5"></div>
+							<div class="col-md-1"></div>
+						</div>
+						<h2 class="landing-grand-subtitle red-text">CUA Snapshot:</h2>
+						<h2 class="section-title mt-0">
+							20 <small>Average Class Size</small><br />
+							97 <small>Percent of Faculty Hold Highest Degrees in Their Field</small><br />
+							72 <small>Academic Programs</small><br />
+							9 <small>Undergraduate Schools</small>
+						</h2>
+					</div>
+				</div>
+				<div class="back-to-top"></div>
+				<div class="line"></div>
+			</div>
+		</section>
+		<!-- service -->
+		<section id="service">
+			<div class="container">
+				<h2 class="section-title">Commitment to Service</h2>
+				<div class="row">
+					<div class="col-md-6">
+						<h2 class="landing-grand-subtitle red-text mt-0">Bright Lights, Big City – and a Healthy Dose of Green</h2>
+						<p>From majestic monuments and awe-inspiring art museums to chic shops and free festivals, Washington, DC, has it all. And CUA's <b>	on-campus Metrorail stop</b> will whisk you in mere minutes to all the hot spots you'll want to hit.</p>
+						<p>What's more, our nation's capital is a hotbed for corporate, congressional, government, high-tech, and medical <b>internships</b>, so you'll be a step ahead when it's time to land your dream job. And did we mention you'll be in the middle of <b>one of the nation's largest college towns</b>, with more than 400,000 other students studying at area colleges and universities?</p>
+						<p>Need a break from the bright lights, big city? CUA's got you covered. Our lush 180-acre tree-lined campus – the ONLY one of its kind in DC – is an oasis amidst the concrete, offering:</p>
+						<ul>
+							<li>Grassy expanses for socializing, studying,and serenity</li>
+							<li>90 student clubs and organizations</li>
+							<li>21 NCAA Division III intercollegiate sports teams, PLUS 10 club sports</li>
+							<li>50 service opportunities EACH WEEK</li>
+						</ul>
+					</div>
+					<div class="col-md-6">
+						<h2 class="landing-subtitle mt-0">See Yourself Here:</h2>
+						<div class="row">
+							<div class="col-md-5 col-xs-5">
+								<img src="images/girl-left.png" alt="" class="img-responsive">
+								<span class="quote">&quot;DC is a city for young people. There are plenty of festivals and free attractions all the time – perfect for a college budget.&quot; - Julia Girardi, &apos;15</span>
+							</div>
+							<div class="col-md-1 col-xs-1"></div>
+							<div class="col-md-5 col-xs-5">
+								<img src="images/girl-right.png" alt="" class="img-responsive">
+								<p>&quot;The nation's capital is THE place to be. Your one-stop shop for cultural education, fun, numerous opportunities, and connections.&quot; - Terrence Britt, &apos;16</p>
+							</div>
+							<div class="col-md-1"></div>
+						</div>
+						<h2 class="landing-grand-subtitle red-text">CUA Snapshot:</h2>
+						<h2 class="section-title mt-0">
+							3 <small>Miles from Campus to US Capitol</small><br />
+							0 <small>Cost to Explore 19 Smithsonian Museums, Attend Outdoor Festivals and Concerts, and Window-shop in Georgetown</small><br />
+							2,000 <small>DC Internship Opportunities Available to CUA Students Each Year</small>
+						</h2>
+					</div>
+				</div>
+				<div class="back-to-top"></div>
+				<div class="line"></div>
+			</div>
+		</section>
+	</div>
+	<!-- /main content -->
+	<div class="modal fade" id="photo-app">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">
+						<span aria-hidden="true"><img src="images/close.png" alt=""></span><span class="sr-only">Close</span>
+					</button>
+					<h4 class="modal-title">Use the items below to customize your picture. Use the handles to resize or rotate.</h4>
+				</div>
+				<div class="modal-body">
+					<ul class="bxslider show-default">
+						<li><img src="images/maskot.png" alt="maskot"></li>
+						<li><img src="images/hat.png" alt="hat"></li>
+						<li><img src="images/cardinals.png" alt="cardinals"></li>
+						<li><img src="images/hoodie.png" alt="hoodie"></li>
+						<li><img src="images/maskot.png" alt="maskot"></li>
+						<li><img src="images/hat.png" alt="hat"></li>
+						<li><img src="images/cardinals.png" alt="cardinals"></li>
+						<li><img src="images/hoodie.png" alt="hoodie"></li>
+					</ul>
+					<div id="canvas-wrap" class="show-default">
+						<canvas id="main-canvas" width="910" height="510"></canvas>
+						<div id="button-wrap">
+							<div class="row">
+								<div class="col-md-8">
+									<div id="upload-photo">
+										<input type="file" id="photo-upload" />
+										<a href="" class="btn btn-default btn-red">Upload a Photo</a>
+									</div>
+									<a href="" class="btn btn-default btn-red">Change Background</a>
+								</div>
+								<div class="col-md-4"><a href="#" id="next-step" class="btn btn-default btn-green pull-right">I'm Done! Next Step.</a></div>
+							</div>
+						</div>
+					</div>
+					<table id="cutout-tools" class="hide-default">
+			          	<tr>
+			          		<td style="width: 15px"><a href="" class="paintbrush shadow" id="small-paint"  data-tools="brush"></a></td>
+			          		<td style="width: 25px"><a href="" class="paintbrush" id="medium-paint"  data-tools="brush"></a></td>
+			          		<td style="width: 45px"><a href="" class="paintbrush" id="large-paint"  data-tools="brush"></a></td>
+			          		<td style="width: 15px"><a href="" class="paintbrush" id="small-eraser" data-tools="eraser"></a></td>
+		 			       	<td style="width: 25px"><a href="" class="paintbrush" id="medium-eraser"  data-tools="eraser"></a></td>
+						    <td style="width: 45px"><a href="" class="paintbrush" id="large-eraser"  data-tools="eraser"></a></td>
+						    <td style="width: 50px"><a href="" class="paintbrush" id="paintbucket" data-tools="pbucket"></a></td>
+			          		<td style="width: 50px"><a href="" id="undo"></a></td>
+			          		<td style="width: 50px"><a href="" id="redo"></a></td>
+			          		<td style="width: 175px"><a href="" id="upload-another" class="btn btn-default btn-red">Upload different photo</a></td>
+			          		<td style="width: 80px"><a href="" id="cancel-crop" class="btn btn-default btn-red">Cancel</a></td>
+			          		<td><input type="button" id="done-clip" class="btn btn-default btn-green" value="Done!" /></td>
+			          	</tr>
+			          	<tr>
+			          		<td colspan="3" style="text-align: center;">Paint Brush</td>
+			          		<td colspan="3" style="text-align: center;">Eraser</td>
+			          	</tr>
+		          	</table>
+					<div id="canvas-edit" class="hide-default">
+						<canvas id="canvas-draw" width="910" height="510"></canvas>
+				      	<canvas id="canvas-source" width="910" height="510"></canvas>
+				      	<canvas id="canvas-dest" width="910" height="510"></canvas>
+					</div>
+					<div id="share">
+						<table width="100%">
+							<tr>
+								<td width="25%"><img src="images/facebook.png" alt="facebook"></td>
+								<td width="25%"><img src="images/twitter.png" id="post2twitter" alt="twitter"></td>
+								<td width="25%"><img src="images/instagram.png" id="save2desktopInstagram" alt="instagram"></td>
+								<td width="25%"><img src="images/save.png" id="save2desktop" alt="save"></td>
+							</tr>
+							<tr>
+								<td>Send to Facebook</td>
+								<td>Tweet it!</td>
+								<td>Save &amp; Upload</td>
+								<td>Save to Desktop</td>
+							</tr>
+						</table>
+						<img src="#" id="image-result" alt=""><br />
+						<p><a href="#" id="go-back" class="btn btn-default btn-red">Go Back</a></p>
+						<form id="save-image" action="save.php" method="post">
+							<input type="hidden" id="image-data" name="image_data" />
+						</form>
+						<form id="twitter-update" action="twitter/request-token.php" method="post">
+							<input type="hidden" id="twitter-image-data" name="twitter_image_data" />
+						</form>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<!-- <div id="button-wrap">
+						<div class="row">
+							<div class="col-md-8">
+								<div id="upload-photo">
+									<input type="file" id="photo-upload" />
+									<a href="" class="btn btn-default btn-red">Upload a Photo</a>
+								</div>
+								<a href="" class="btn btn-default btn-red">Change Background</a>
+							</div>
+							<div class="col-md-4"><a href="" class="btn btn-default btn-green pull-right">I'm Done! Next Step.</a></div>
+						</div>
+					</div> -->
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
