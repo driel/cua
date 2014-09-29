@@ -6,6 +6,46 @@ var slider;
 var drawStates = [], step = -1;
 var img_src, imgFormat = 'jpg', imgQuality = 0.9; // jpeg | png
 jQuery(function($){
+	// var screenW = window.innerWidth;
+
+	// if(screenW >= 320 && screenW <= 479){
+	// 	var canvasWidth = screenW - 40;
+	// 	$('.modal-lg').css({
+	// 		width: '100%',
+	// 		margin: '0'
+	// 	});
+
+	// 	$('#main-canvas').attr({
+	// 		width: canvasWidth+'px',
+	// 		height: '160px'
+	// 	});
+	// }
+
+	function resetModalWidth(){
+		var screenW = window.innerWidth;
+
+		if(screenW >= 320 && screenW <= 767){
+			var ratio = 1/2;
+			var canvasWidth = screenW - 40;
+			var canvasHeight = canvasWidth * ratio;
+			$('.modal-lg').css({
+				width: '100%',
+				margin: '0'
+			});
+
+			$('#main-canvas').attr({
+				width: canvasWidth+'px',
+				height: canvasHeight+'px'
+			});
+		}else{
+			$('.modal-dialog').css({
+				width: '1024px'
+			});
+		}
+	}
+
+	resetModalWidth();
+
 	$('#photo-app').on('shown.bs.modal',function(){
 
 		slider = $('.bxslider').bxSlider({
@@ -52,8 +92,9 @@ jQuery(function($){
 		$('#main-canvas').droppable({
 			drop: function(e, ui){
 				console.log(e, ui);
-				var left = e.pageX - canvas._offset.left;
-				var top = e.pageY - canvas._offset.top;
+				var left = e.pageX - $('#canvas-wrap').offset().left;
+				var top = e.pageY - $('#canvas-wrap').offset().top;
+				console.log(left, top);
 				var img = ui.draggable[0].src;
 				fabric.Image.fromURL(img, function(theImg){
 					canvas.add(theImg.set({
@@ -152,7 +193,7 @@ jQuery(function($){
 			if(e.target.id != "context" && $("#context").is(":visible") && $(e.target).parents("#context").length == 0){
 				$("#context").hide();
 			}
-			return false;
+			//return false;
 		});
 
 		$('a.paintbrush').on("click", function(e){
@@ -646,9 +687,7 @@ jQuery(function($){
 		var main_canvas = $('#main-canvas').clone();
 		$('.canvas-container').remove();
 		$(main_canvas).insertBefore('#button-wrap');
-		$('.modal-dialog').css({
-			width: '1024px'
-		});
+		resetModalWidth();
 		$('.hide-default, #share').hide();
 		$('.show-default, .bx-wrapper').show();
 		
