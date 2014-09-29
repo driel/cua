@@ -6,6 +6,18 @@ body{
 	font-family: 'Lato';
 }
 
+.tbl{
+	display: table;
+}
+
+.tbl-row{
+	display: table-row;
+}
+
+.tbl-cell{
+	display: table-cell;
+}
+
 .img-responsive{
 	width: 100%;
 }
@@ -41,6 +53,20 @@ body{
 	bottom: 20px;
 	right: 15px;
 	text-indent: -9999px;
+}
+
+.snapshot-number, .snapshot-text{
+	font-weight: 900;
+}
+
+.snapshot-number{
+	margin-top: 0;
+	font-size: 36px;
+	padding-right: 5px;
+}
+
+.snapshot-text{
+	font-size: 16px;
 }
 
 .main-content section .line{
