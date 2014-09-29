@@ -44,15 +44,36 @@ body{
 	margin-top: 80px;
 }
 
-.back-to-top{
+section .back-to-top{
 	cursor: pointer;
 	background: url('../images/top.png') no-repeat;
-	width: 52px;
-	height: 52px;
+	width: 32px;
+	height: 32px;
 	position: absolute;
 	bottom: 20px;
 	right: 15px;
 	text-indent: -9999px;
+	opacity: 0;
+	alpha: filter(alpha=0);
+	-webkit-transition: opacity .3s;
+	-o-transition: opacity .3s;
+	transition: opacity .3s;
+}
+
+section:hover .back-to-top{
+	cursor: pointer;
+	background: url('../images/top.png') no-repeat;
+	width: 32px;
+	height: 32px;
+	position: absolute;
+	bottom: 20px;
+	right: 15px;
+	text-indent: -9999px;
+	opacity: 1.0;
+	alpha: filter(alpha=100);
+	-webkit-transition: opacity .3s;
+	-o-transition: opacity .3s;
+	transition: opacity .3s;
 }
 
 .snapshot-number, .snapshot-text{
@@ -115,6 +136,26 @@ body{
 	box-shadow: 0 0 7px rgba(0, 0, 0, .5);
 }
 
+#canvas-placeholder p#canvas-image{
+	position: relative;
+}
+
+#canvas-placeholder p#canvas-image>.btn.btn-default.btn-red{
+	position: absolute;
+	top: 50%;
+	margin: auto;
+	left: 0;
+	right: 0;
+	width: 165px;
+	padding: 10px 5px;
+	font-weight: 900;
+	font-size: 20px;
+	border-radius: 5px;
+	-moz-box-shadow: inset -1px -1px 1px rgba(0,0,0,0.5);
+	-webkit-box-shadow: inset -1px -1px 1px rgba(0,0,0,0.5);
+	box-shadow: inset -1px -1px 1px rgba(0,0,0,0.5);
+}
+
 /*
 ** NAVBAR
 */
@@ -160,6 +201,7 @@ body{
 
 	.navbar-brand>img{
 		height: 100%;
+		width: auto;
 	}
 
 	.nav.navbar-nav>li {
@@ -189,6 +231,7 @@ body{
 
 	.navbar-brand>img{
 		height: 100%;
+		width: auto;
 	}
 
 	.nav.navbar-nav{
